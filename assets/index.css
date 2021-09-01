@@ -1,0 +1,148 @@
+::placeholder{
+    color: black;
+    opacity: 2;
+}
+
+/*background*/
+.myVideo{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+
+/*contenedor del formulario*/
+.contenedor{
+    margin: 10% 30% 30% 29%;
+    width: 30%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(205, 212, 198, 0.089);
+    text-align: center;
+    padding: 1% 5% 1% 5%;
+    border: 1px solid rgba(0, 0, 0, 0.356);
+}
+
+/* Titulo */
+.titulo{
+    margin-top: 5%;
+    font-size: 1.5em;
+    font-family: 'Kaisei HarunoUmi', serif;
+    font-weight: 500%;
+    text-transform: uppercase;
+}
+
+
+/*Formulario*/
+.formulario{
+    display: flex;
+    flex-direction: column;
+    /* margin: auto; */
+    padding-top: 5%;
+}
+
+
+/*Imagen*/
+.imagen{
+    width: 20%;
+    margin: auto;
+    filter: blur(0.2) brightness(10%) hue-rotate(95%); 
+}
+
+
+
+/* Botones */
+input{
+    justify-content: center;
+    margin: auto;
+    width: 60%;
+    margin-bottom: 3.5%;
+    padding: 2.5%;
+    border: 0.5px solid ;
+    background-color: rgba(205, 212, 198, 0.089);
+}
+.Entrar{
+    cursor: pointer;
+    width: 50%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 2.5%;
+    background-color: burlywood;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-family: 'Kaisei HarunoUmi', serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.Entrar:hover{
+    background-color:rgb(240, 149, 29);
+    border: 1px solid black;
+}
+.Olvide:hover{
+    color: black;
+}
+.Olvide{
+    cursor: pointer;
+    margin: auto;
+    padding: 0.6%;
+    margin-bottom: 2%;
+    margin-top: 3%;
+    font-family: 'Kaisei HarunoUmi', serif;
+    font-weight: 500;
+    /* text-transform: uppercase; */
+    background-color: rgba(221, 181, 181, 0.164);
+    color: white;
+    border-radius: 6px;
+}
+/*Footer*/
+.derechos{
+    display: flex;
+    justify-content: center;
+    font-family: "Kaisei HarunoUmi", serif;
+    color: rgb(245, 214, 214);
+    font-size: 0.7em;
+    /* position: fixed; */
+}
+.derechos p{
+    padding-right: 1%;
+}
+.derechos a{
+    color: rgb(199, 240, 15);
+    text-decoration: none;
+}
+
+@media (max-width:768px ) {
+    .contenedor{
+        width: 70%;
+        margin: 45% 10% 10% 10%;
+    }
+    .titulo{
+        font-size: 1.2em;
+        padding-top: 2%;
+        padding-bottom: 3%;
+
+    }
+    .Olvide{
+        width: 40%;
+        margin-bottom: 3.5%;
+        padding: 2%;
+        font-size: 0.5em;
+        border: 0.5px solid ;
+        background-color: rgba(205, 212, 198, 0.089);
+    }
+    .myVideo{
+        position: fixed;
+        min-width: 100%;
+        max-height: 100%;
+    }
+    
+}
